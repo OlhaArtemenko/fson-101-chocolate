@@ -24,7 +24,7 @@
     <header class="menu-header">
       <div class="container container-header">
         <div class="logo-box">
-        <a class="logo-link" href="./index.html">Simply chocolate</a>
+        <a class="logo-link" href="./index.html">Simply <span class="part-logo-link">chocolate</span> </a>
         <svg class="icon" width="24" height="24">
           <use href="./images/icons.svg#icon-chocolate"></use>
         </svg>
@@ -66,17 +66,25 @@
     <main>
       <!-- Hero section -->
       <section class="hero-section">
-        <div class="container">
+        <div class="container hero-container">
           <h1>
             Treat yourself or a loved one to our finest ingredients for a moment
             of pure delight!
           </h1>
-          <button type="button">Buy now</button>
-          <a href="#how-its-made-id"><button type="button">How it's made</button></a>
-          <a href="#benefits-id">scroll down</a>
-          <svg class="icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-fangle-small"></use>
-          </svg>
+          <div class="hero-buttons">
+            <div class="item-hero-buttons">
+              <button type="button" class="buy-button">Buy now</button>
+              <a class="made-button" href="#how-its-made-id">How it's made</a>
+            </div>
+            <div class="item-hero-buttons">
+              <a class="scroll-button" href="#benefits-id">scroll down</a>
+              <svg class="icon" width="22" height="22">
+                <use href="./images/icons.svg#icon-fangle-small"></use>
+              </svg>
+            </div>
+
+          </div>
+
         </div>
       </section>
       <!-- Benefits section -->
