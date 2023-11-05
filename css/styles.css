@@ -1,0 +1,134 @@
+/* Global styles */
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #ffffff;
+    color: #111;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.28px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul, ol {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+a {
+    text-decoration: none;
+}
+address {
+    font-style: normal;
+}
+img {
+    display: block;
+}
+.container {
+max-width: 1200px;
+margin-left: auto;
+margin-right: auto;
+padding: 0 32px;
+}
+section {
+padding-top: 120px;
+padding-bottom: 120px;
+}
+.menu-link {
+    color: #111;
+}
+
+/* Header styles */
+.logo-link {
+color: #111;
+font-size: 18px;
+font-style: italic;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0.54px;
+}
+.menu {
+display: flex;
+gap: 24px;
+align-items: center;
+font-weight: 500;
+line-height: 16px;
+}
+.nav-box-header {
+display: flex;
+
+}
+.social-link-box {
+    display: flex;
+    gap: 14px;
+}
+.container-header {
+display: flex;
+align-items: center;
+padding-top: 24px;
+padding-bottom: 24px;
+justify-content: space-between;
+}
+.full-menu {
+    display: flex;
+    gap: 90px;
+}
+.logo-box {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+}
+.icon-box {
+width: 40px;
+height: 40px;
+border-radius: 10px;
+border: 1px solid rgba(17, 17, 17, 0.10);
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: none;
+
+
+}
+
+
+/* Hero styles */
+.hero-section {
+border-radius: 30px;
+background-color: rgba(17, 17, 17, 0.70);
+background-image: url(../images/hero-chocolate.jpg);
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+width: 1136px;
+height: 600px;
+margin: 0 auto;
+}
+
+
+
+
+
+
+/* Benefits styles */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.benefits-container{
+    width: 1200;
+    background-color: #1E1823;
+}

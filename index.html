@@ -17,39 +17,42 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <div class="container">
-        <a href="./index.html">Simply chocolate</a>
+    <header class="menu-header">
+      <div class="container container-header">
+        <div class="logo-box">
+        <a class="logo-link" href="./index.html">Simply chocolate</a>
         <svg class="icon" width="24" height="24">
           <use href="./images/icons.svg#icon-chocolate"></use>
         </svg>
-        <nav>
-          <ul>
-            <li><a href="./index.html">Home </a></li>
-            <li><a href="">How i'ts made</a></li>
-            <li><a href="">Chocolate is loved</a></li>
+        </div>
+        <div class="full-menu">
+        <nav class="nav-box-header">
+          <ul class="menu">
+            <li><a class="menu-link" href="./index.html">Home </a></li>
+            <li><a class="menu-link" href="#how-its-made-id">How i'ts made</a></li>
+            <li><a class="menu-link" href="#reviews-id">Chocolate is loved</a></li>
           </ul>
         </nav>
-        <ul>
-          <li>
+        <ul class="social-link-box">
+          <li class="icon-box">
             <a class="link-icon" href="" target="_blank" aria-label="facebook">
               <svg class="icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
-          <li>
+          <li class="icon-box">
             <a class="link-icon" href="" target="_blank" aria-label="instagram">
               <svg class="icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
-          <li>
+          <li class="icon-box">
             <a class="link-icon" href="" target="_blank" aria-label="twitter">
               <svg class="icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-twitter"></use>
@@ -57,28 +60,29 @@
             </a>
           </li>
         </ul>
+        </div>
       </div>
     </header>
     <main>
       <!-- Hero section -->
-      <section>
+      <section class="hero-section">
         <div class="container">
           <h1>
             Treat yourself or a loved one to our finest ingredients for a moment
             of pure delight!
           </h1>
           <button type="button">Buy now</button>
-          <button type="button">How it's made</button>
-          <a href="">scroll down</a>
+          <a href="#how-its-made-id"><button type="button">How it's made</button></a>
+          <a href="#benefits-id">scroll down</a>
           <svg class="icon" width="24" height="24">
             <use href="./images/icons.svg#icon-fangle-small"></use>
           </svg>
         </div>
       </section>
       <!-- Benefits section -->
-      <section>
-        <div class="container">
-          <h2>Benefits</h2>
+      <section id="benefits-id" class="benefits-section">
+        <div class="container benefits-container">
+          <h2 class="visually-hidden">Benefits</h2>
           <ul>
             <li>
               <svg class="icon" width="32" height="32">
@@ -192,7 +196,7 @@
         </div>
       </section>
       <!-- How it's made section -->
-      <section>
+      <section id="how-its-made-id">
         <div class="container">
           <h2>How it's made?</h2>
           <img
@@ -254,7 +258,7 @@
                 src="./images/products/apple-cranberry.jpg"
                 alt="Apple&Cranberry Milk chocolate"
               />
-              <h3>Apple&#38;Cranberry</h3>
+              <h3>Apple&#38Cranberry</h3>
               <p>Milk chocolate</p>
               <button type="button">50 uah</button>
             </li>
@@ -263,7 +267,7 @@
                 src="./images/products/lime-seasalt.jpg"
                 alt="Lime&Sea Salt Dark chocolate"
               />
-              <h3>Lime&#38;Sea Salt</h3>
+              <h3>Lime&#38Sea Salt</h3>
               <p>Dark chocolate</p>
               <button type="button">66 uah</button>
             </li>
@@ -351,7 +355,7 @@
         </div>
       </section>
       <!-- Reviews section-->
-      <section>
+      <section id="reviews-id">
         <div class="container">
           <h2>Chocolate is loved</h2>
           <ul>
@@ -406,7 +410,7 @@
       <div class="container">
         <h2>Chocolate a delicious cure for a bad day</h2>
         <p>Social networks</p>
-        <ul>
+        <ul class="social-link-box">
           <li>
             <a class="link-icon" href="" target="_blank" aria-label="facebook">
               <svg class="icon" width="24" height="24">
@@ -430,25 +434,25 @@
           </li>
         </ul>
         <p>Contact us</p>
-        <address>
-          <ul>
+        <address class="contacts">
+          <ul class="contacts-menu">
             <li>
-              <a class="link-address" href="tel:+380684439426"
+              <a class="contacts-link" href="tel:+380684439426"
                 >+380 (68) 443-94-26</a
               >
             </li>
             <li>
-              <a class="link-address" href="mailto:simplychoc@gmail.com"
+              <a class="contacts-link" href="mailto:simplychoc@gmail.com"
                 >simplychoc@gmail.com</a
               >
             </li>
           </ul>
         </address>
-        <nav>
-          <ul>
-            <li><a href="./index.html">Home </a></li>
-            <li><a href="">How i'ts made</a></li>
-            <li><a href="">Chocolate is loved</a></li>
+        <nav class="nav-box-footer">
+          <ul class="menu">
+            <li><a class="menu-link" href="./index.html">Home </a></li>
+            <li><a class="menu-link" href="#how-its-made-id">How i'ts made</a></li>
+            <li><a class="menu-link" href="#reviews-id">Chocolate is loved</a></li>
           </ul>
         </nav>
         <form name="subscribe_form" autocomplete="off" novalidate></form>
