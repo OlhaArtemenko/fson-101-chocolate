@@ -345,4 +345,5 @@ button {
   border: 1px solid rgba(17, 17, 17, 0.1);
   padding: 8px 20px;
   display: block;
+  margin: 0 auto;
 }
