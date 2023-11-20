@@ -202,7 +202,7 @@
     </section>
     <!-- How it's made section -->
     <section id="how-its-made-id" class="howitsmade-section section">
-      <div class="container">
+      <div class="container howitsmade-container">
         <h2 class="section-title">How it's <span class="word-taste">made?</span></h2>
         <div class="howitsmade-img">
           <button class="btn-play-video" type="button">
@@ -249,7 +249,7 @@
     </section>
     <!-- Products sections -->
     <section class="products-section section">
-      <div class="container">
+      <div class="container products-container">
         <h2 class="section-title">Our <span class="word-taste">products</span></h2>
         <ul class="products-list">
           <li class="products-item">
@@ -320,118 +320,141 @@
     </section>
     <!-- Top sellers section -->
     <section class="topsellers-section section">
-      <div class="container">
+      <div class="container topsellers-container">
         <h2 class="section-title"><span class="word-taste">Top</span> sellers</h2>
-        <ul>
-          <li>
+        <ul class="topsellers-list">
+          <li class="topsellers-item">
             <img src="./images/bestsellers/choconuts.jpg"
               srcset="./images/bestsellers/choconuts.jpg 1x, ./images/bestsellers/choconuts@2x.jpg 2x"
               alt="Chocolate with nuts" />
-            <h3>Chocolate with nuts</h3>
+            <h3 class="name-of-product topsellers-product">Chocolate with nuts</h3>
           </li>
-          <li>
+          <li class="topsellers-item">
             <img src="./images/bestsellers/chocofruits.jpg"
               srcset="./images/bestsellers/chocofruits.jpg 1x, ./images/bestsellers/chocofruits@2x.jpg 2x"
               alt="Chocolate with fruits" />
-            <h3>Chocolate with fruits</h3>
+            <h3 class="name-of-product topsellers-product">Chocolate with fruits</h3>
           </li>
-          <li>
+          <li class="topsellers-item">
             <img src="./images/bestsellers/chocodark.jpg"
               srcset="./images/bestsellers/chocodark.jpg 1x, ./images/bestsellers/chocodark@2x.jpg 2x"
               alt="Dark chocolate" />
-            <h3>Dark chocolate</h3>
+            <h3 class="name-of-product topsellers-product">Dark chocolate</h3>
           </li>
         </ul>
       </div>
     </section>
     <!-- Reviews section-->
     <section id="reviews-id" class="reviews-section section">
-      <div class="container">
-        <h2 class="section-title"><span class="word-taste">Chocolate</span> is loved</h2>
-        <ul>
-          <li>
-            <img src="./images/reviews/victoria.png"
+      <div class="container reviews-container">
+        <h2 class="section-title review-title"><span class="word-taste">Chocolate</span> is loved</h2>
+        <ul  class="reviews-list">
+          <li class="reviews-item">
+            <div class="photo-client">
+              <img src="./images/reviews/victoria.png"
               srcset="./images/reviews/victoria.png 1x, ./images/reviews/victoria@2x.png 2x"
               alt="Victoria Dobrzhanska" />
-            <h3>Victoria Dobrzhanska</h3>
-            <p>
+            </div>
+            <div class="reviews-box">
+            <h3 class="name-client">Victoria Dobrzhanska</h3>
+            <p class="review">
               I love this chocolate bar. Perfect combination of light crispy
               wafer, covered in a thin layer chocolate.
             </p>
+            </div>
           </li>
-          <li>
-            <img src="./images/reviews/nazar.png"
+          <li class="reviews-item">
+            <div class="photo-client">
+              <img src="./images/reviews/nazar.png"
               srcset="./images/reviews/nazar.png 1x, ./images/reviews/nazar@2x.png 2x" alt="Nazar Babenko" />
-            <h3>Nazar Babenko</h3>
-            <p>
+            </div>
+            <div class="reviews-box">
+            <h3 class="name-client">Nazar Babenko</h3>
+            <p class="review">
               This chocolate confection is a delight! A delight! The wafer is
               light and crisp, the hazelnut cream is smooth, and the chocolate
               is good.
             </p>
+            </div>
           </li>
-          <li>
-            <img src="./images/reviews/olena.png"
+          <li class="reviews-item">
+            <div class="photo-client">
+              <img src="./images/reviews/olena.png"
               srcset="./images/reviews/olena.png 1x, ./images/reviews/olena@2x.png 2x" alt="Olena Kampusch" />
-            <h3>Olena Kampusch</h3>
-            <p>
+            </div>
+            <div class="reviews-box">
+            <h3 class="name-client">Olena Kampusch</h3>
+            <p class="review">
               Chocolate is a family favourite treat. Love the delicious smooth
               chocolate and the creaminess inside. The wafer is soft but
               crunchy.
             </p>
+            </div>
           </li>
         </ul>
-        <button type="button">Leave a review</button>
+        <button class="review-btn" type="button">Leave a review</button>
       </div>
     </section>
   </main>
   <!-- Footer -->
-  <footer class="footer-section">
-    <div class="container">
-      <h2><span class="word-taste">Chocolate</span> a delicious cure for a bad day</h2>
-      <p>Social networks</p>
-      <ul class="social-link-box">
-        <li>
-          <a class="link-icon" href="" target="_blank" aria-label="facebook">
-            <svg class="icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a class="link-icon" href="" target="_blank" aria-label="instagram">
-            <svg class="icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a class="link-icon" href="" target="_blank" aria-label="twitter">
-            <svg class="icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <p>Contact us</p>
-      <address class="contacts">
-        <ul class="contacts-menu">
+  <footer class="footer-section section">
+    <div class="container footer-container">
+    <div class="element-footer-list">
+      <h2 class="footer-title"><span class="word-taste">Chocolate</span> a delicious cure for a bad day</h2>
+      <div  class="element-footer-contacts">
+        <p>Contact us</p>
+        <address class="contacts">
+          <ul class="contacts-menu">
+            <li>
+              <a class="contacts-link" href="tel:+380684439426">+380 (68) 443-94-26</a>
+            </li>
+            <li>
+              <a class="contacts-link" href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+      <div class="element-footer-networks">
+        <p>Social networks</p>
+        <ul class="social-link-box">
           <li>
-            <a class="contacts-link" href="tel:+380684439426">+380 (68) 443-94-26</a>
+            <a class="link-icon" href="" target="_blank" aria-label="facebook">
+              <svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
           </li>
           <li>
-            <a class="contacts-link" href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
+            <a class="link-icon" href="" target="_blank" aria-label="instagram">
+              <svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="link-icon" href="" target="_blank" aria-label="twitter">
+              <svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
           </li>
         </ul>
-      </address>
-      <nav class="nav-box-footer">
-        <ul class="menu">
-          <li><a class="menu-link" href="./index.html">Home </a></li>
-          <li><a class="menu-link" href="#how-its-made-id">How i'ts made</a></li>
-          <li><a class="menu-link" href="#reviews-id">Chocolate is loved</a></li>
-        </ul>
-      </nav>
-      <form name="subscribe_form" autocomplete="off" novalidate></form>
-      <button type="submit">Subscribe</button>
+      </div>
+    </div>  
+      <div class="element-footer-menu">
+        <nav class="nav-box-footer">
+          <ul class="menu">
+            <li class="menu-item">
+              <a class="menu-link" href="./index.html">Home </a></li>
+            <li class="menu-item">
+              <a class="menu-link" href="#how-its-made-id">How i'ts made</a></li>
+            <li class="menu-item">
+              <a class="menu-link" href="#reviews-id">Chocolate is loved</a></li>
+          </ul>
+        </nav>
+        <form name="subscribe_form" autocomplete="off" novalidate></form>
+        <button type="submit">Subscribe</button>
+      </div>
     </div>
   </footer>
 </body>
