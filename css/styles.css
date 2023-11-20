@@ -56,6 +56,7 @@ button {
   flex-direction: row;
   padding: 20px 0 14px 0;
   justify-content: space-between;
+  position: relative;
 }
 .open-menu {
   display: flex;
@@ -522,4 +523,37 @@ button {
   display: flex;
   flex-direction: row;
   gap: 8px;
+}
+/* MENU WINDOW */
+.full-menu.is-open {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  width: 220px;
+  height: 812px;
+  top: 0;
+  right: -20px;
+  background-color: #1e1823;
+  padding: 136px 52px 20px 20px;
+}
+.window-menu {
+  gap: 24px;
+}
+.home-link {
+  color: #fd9222;
+}
+.exit-menu-btn {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  border: none;
+  top: 20px;
+  right: 20px;
+  padding: 0;
+}
+.exit-menu-svg {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
 }

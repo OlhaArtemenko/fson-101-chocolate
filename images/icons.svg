@@ -44,5 +44,9 @@
       <path fill="#f5f4f4" d="M10.909 24V8.727l14.545 7.636-14.545 7.636z" style="fill:var(--color5, #f5f4f4)"/>
       <path fill="none" stroke="#fff" stroke-width=".727" d="M31.636 16c0 8.636-7.001 15.636-15.636 15.636S.364 24.635.364 16C.364 7.364 7.365.364 16 .364S31.636 7.365 31.636 16z" style="stroke:var(--color6, #fff)"/>
     </symbol>
+    <symbol id="icon-exit" viewBox="0 0 32 32">
+<title>exit</title>
+<path d="M19.8332 8.16675L8.1665 19.8334M8.1665 8.16675L19.8332 19.8334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
   </defs>
 </svg>
