@@ -359,6 +359,9 @@ button {
 /* TOPSELLERS SECTION */
 .topsellers-container {
   margin-top: 80px;
+  width: 335px;
+  height: 595px;
+  overflow: hidden;
 }
 .topsellers-item img {
   width: 335px;
@@ -374,11 +377,24 @@ button {
 }
 .topsellers-list {
   display: flex;
+  gap: 16px;
+  white-space: nowrap;
+  animation: scroll 10s linear infinite alternate;
 }
-.topsellers-item:nth-child(2),
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+/* .topsellers-item:nth-child(2),
 .topsellers-item:nth-child(3) {
   display: none;
-}
+} */
+
 /* REVIEWS SECTION */
 .reviews-container {
   margin-top: 80px;
@@ -394,6 +410,10 @@ button {
 .review {
   color: rgba(17, 17, 17, 0.7);
   text-align: center;
+}
+.reviews-list {
+  display: flex;
+  gap: 16px;
 }
 .reviews-item {
   position: relative;
@@ -421,6 +441,7 @@ button {
 .reviews-item:nth-child(3) {
   display: none;
 }
+
 .review-btn {
   background-color: transparent;
   border-radius: 100px;
@@ -697,6 +718,9 @@ button {
 }
 .comment-area:focus {
   border-color: #fd9222;
+}
+.comment-area::placeholder {
+  text-align: left;
 }
 .checkbox-box {
   margin-bottom: 32px;
