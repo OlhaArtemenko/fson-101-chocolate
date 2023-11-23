@@ -548,7 +548,7 @@ button {
   justify-content: space-between;
   position: absolute;
   width: 220px;
-  height: 812px;
+  min-height: 100%;
   top: 0;
   right: -20px;
   background-color: #1e1823;
@@ -734,6 +734,11 @@ button {
   background-color: #fd9222;
   border: none;
   fill: #f4f4fd;
+}
+.checkbox-icon {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
 }
 .user-privacy-text {
   color: #8e8f99;
@@ -1001,7 +1006,6 @@ button {
     flex-direction: row;
     gap: 40px;
     padding-bottom: 54px;
-    /* justify-content: space-between; */
     align-items: center;
   }
 
@@ -1026,5 +1030,63 @@ button {
     display: flex;
     flex-direction: row;
     gap: 8px;
+  }
+  /* MODAL WINDOW */
+  .modal-window {
+    width: 517px;
+    min-height: 794px;
+    padding: 40px;
+  }
+  .btn-close-modal {
+    top: 24px;
+    right: 24px;
+    width: 28px;
+    height: 28px;
+  }
+  .icon-btn-close {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  .modal-title {
+    margin-bottom: 40px;
+  }
+  .form-box {
+    margin-bottom: 18px;
+  }
+  .comment-box {
+    margin-bottom: 18px;
+  }
+  .icon-pic {
+    position: relative;
+  }
+  .input-field {
+    height: 68px;
+    border-radius: 13px;
+    padding-left: 62px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-right: 24px;
+    font-size: 18px;
+  }
+  .comment-area {
+    height: 137px;
+    border-radius: 13px;
+    font-size: 18px;
+    background-color: transparent;
+    padding: 22px 24px;
+  }
+
+  .checkbox-box {
+    margin-bottom: 40px;
+  }
+  .user-privacy-text {
+    font-size: 14px;
+  }
+  .box-text-privacy {
+    font-size: 14px;
+  }
+  .btn-send-modal {
+    padding: 14px 40px;
   }
 }
