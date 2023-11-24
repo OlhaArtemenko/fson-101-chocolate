@@ -1,4 +1,4 @@
-/* Global styles */
+/* ========Global styles======== */
 html {
   scroll-behavior: smooth;
 }
@@ -50,7 +50,7 @@ button {
   cursor: pointer;
 }
 
-/* HEADER STYLES */
+/* ============HEADER STYLES=============*/
 .full-menu {
   display: none;
 }
@@ -85,7 +85,7 @@ button {
 .part-logo-link {
   font-style: normal;
 }
-/* HERO STYLES */
+/* =============HERO STYLES============= */
 .hero-section {
   max-width: 335px;
   background-color: rgba(17, 17, 17, 0.4);
@@ -156,7 +156,7 @@ button {
   height: 28px;
   padding: 6px;
 }
-/* BENEFITS SECTION */
+/* =================BENEFITS SECTION=============== */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -200,7 +200,7 @@ button {
 .benefits-item p {
   color: rgba(255, 255, 255, 0.7);
 }
-/* INGRIDIENTS SECTION */
+/* ================INGRIDIENTS SECTION============== */
 .ingridients-container {
   margin-top: 80px;
 }
@@ -263,7 +263,7 @@ button {
 .icon-arrow-element:nth-child(even) {
   fill: #fd9222;
 }
-/* HOW ITS MADE SECTION */
+/* ================HOW ITS MADE SECTION============= */
 .howitsmade-container {
   margin-top: 75px;
 }
@@ -321,7 +321,7 @@ button {
 .recipe p {
   color: #111111;
 }
-/* PRODUCTS SECTION */
+/* ==============PRODUCTS SECTION================ */
 .products-container {
   margin-top: 80px;
 }
@@ -361,7 +361,7 @@ button {
   display: block;
   margin: 0 auto;
 }
-/* TOPSELLERS SECTION */
+/* ==============TOPSELLERS SECTION=============== */
 .topsellers-container {
   margin-top: 80px;
 }
@@ -385,7 +385,7 @@ button {
   display: none;
 }
 
-/* REVIEWS SECTION */
+/* ================REVIEWS SECTION================ */
 .reviews-container {
   margin-top: 80px;
   margin-bottom: 80px;
@@ -444,7 +444,7 @@ button {
   display: block;
   margin: 32px auto 0 auto;
 }
-/* FOOTER SECTION */
+/* ==============FOOTER SECTION================ */
 .footer-section {
   background-color: #1e1823;
   padding: 32px 20px;
@@ -542,7 +542,7 @@ button {
   flex-direction: row;
   gap: 8px;
 }
-/* MENU WINDOW */
+/* ================MENU WINDOW============= */
 .full-menu.is-open {
   display: flex;
   flex-direction: column;
@@ -576,7 +576,7 @@ button {
   max-width: 100%;
   object-fit: cover;
 }
-/* MODAL WINDOW */
+/* =================MODAL WINDOW=================== */
 .backdrop {
   position: fixed;
   top: 0;
@@ -768,6 +768,20 @@ button {
   padding: 12px 28px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* ================TABLET STYLES================ */
+@media (min-resolution: 192dpi) and (min-width: 768px) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.3),
+        rgba(46, 47, 66, 0.3)
+      ),
+      url(../images/hero-bg_tab@2x.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero-section {
     background-image: linear-gradient(
@@ -795,7 +809,7 @@ button {
     padding-left: 32px;
     padding-right: 32px;
   }
-  /* HEADER STYLES */
+  /* ============HEADER STYLES========= */
   .full-menu {
     display: flex;
     flex-direction: row;
@@ -834,7 +848,7 @@ button {
   .social-link-box-header .icon {
     fill: #111;
   }
-  /* HERO STYLES */
+  /* =========HERO STYLES============= */
   .hero-section {
     max-width: 768px;
     padding: 671px 40px 40px 40px;
@@ -870,7 +884,7 @@ button {
     flex-direction: row;
     justify-content: space-between;
   }
-  /* BENEFITS SECTION */
+  /* ==============BENEFITS SECTION============ */
   .benefits-section {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -884,7 +898,7 @@ button {
     flex-basis: calc((100% - 88px) / 2);
   }
 
-  /* INGRIDIENTS SECTION */
+  /* ===========INGRIDIENTS SECTION=========== */
   .ingridients-container {
     margin-top: 100px;
   }
@@ -910,7 +924,7 @@ button {
   .ingridients-item:nth-child(8) {
     display: block;
   }
-  /* HOW ITS MADE SECTION */
+  /* ============HOW ITS MADE SECTION============= */
   .howitsmade-section {
     padding-left: 77px;
     padding-right: 77px;
@@ -935,7 +949,7 @@ button {
   .recipe-box {
     padding: 32px;
   }
-  /* PRODUCTS SECTION */
+  /* ============PRODUCTS SECTION============== */
   .products-container {
     margin-top: 100px;
   }
@@ -947,7 +961,7 @@ button {
   .products-item {
     flex-basis: calc((100% - 32px) / 2);
   }
-  /* TOPSELLERS SECTION */
+  /* =========TOPSELLERS SECTION============= */
   .topsellers-container {
     margin-top: 100px;
   }
@@ -969,7 +983,7 @@ button {
   .topsellers-item:nth-child(2) {
     display: block;
   }
-  /* REVIEWS SECTION */
+  /* ==========REVIEWS SECTION=============== */
   .reviews-container {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -1038,7 +1052,7 @@ button {
     flex-direction: row;
     gap: 8px;
   }
-  /* MODAL WINDOW */
+  /* =============MODAL WINDOW=============== */
   .modal-window {
     width: 517px;
     min-height: 794px;
@@ -1083,7 +1097,6 @@ button {
     background-color: transparent;
     padding: 22px 24px;
   }
-
   .checkbox-box {
     margin-bottom: 40px;
   }
@@ -1097,6 +1110,7 @@ button {
     padding: 14px 40px;
   }
 }
+/* ===============DESCKTOP================== */
 @media (min-resolution: 192dpi) and (min-width: 1200px) {
   .hero-section {
     background-image: linear-gradient(
@@ -1108,24 +1122,14 @@ button {
     background-position: center center;
     background-size: cover;
   }
-  .howitsmade-img {
-    background-image: linear-gradient(
-        0deg,
-        rgba(17, 17, 17, 0.4),
-        rgba(17, 17, 17, 0.4)
-      ),
-      url(../images/howitsmade@2x.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
 }
+
 @media screen and (min-width: 1200px) {
   .section {
     max-width: 1200px;
   }
 
-  /* HEADER STYLES */
+  /* ============HEADER STYLES================== */
   .full-menu {
     gap: 90px;
   }
@@ -1136,14 +1140,24 @@ button {
     font-size: 18px;
   }
 
-  /* HERO STYLES */
+  /* ==================HERO STYLES=============== */
   .hero-section {
     max-width: 1200px;
     padding-top: 381px;
     margin-bottom: 80px;
   }
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.3),
+        rgba(46, 47, 66, 0.3)
+      ),
+      url(../images/hero-bg_desk.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
 
-  /* BENEFITS SECTION */
+  /* ===============BENEFITS SECTION============== */
   .benefits-section {
     padding-top: 50px;
     padding-left: 50px;
@@ -1157,7 +1171,7 @@ button {
     flex-basis: calc((100% - 176px) / 3);
   }
 
-  /* INGRIDIENTS SECTION */
+  /* ===========INGRIDIENTS SECTION============== */
   .ingridients-container {
     margin-top: 120px;
   }
@@ -1168,7 +1182,7 @@ button {
     flex-basis: calc((100% - 96px) / 4);
   }
 
-  /* HOW ITS MADE SECTION */
+  /* ============HOW ITS MADE SECTION============ */
   .howitsmade-section {
     padding-left: 32px;
     padding-right: 32px;
@@ -1192,7 +1206,7 @@ button {
     left: 257px;
   }
 
-  /* PRODUCTS SECTION */
+  /* =============PRODUCTS SECTION=============== */
   .products-container {
     margin-top: 120px;
   }
@@ -1204,7 +1218,7 @@ button {
     flex-basis: calc((100% - 54px) / 4);
   }
 
-  /* TOPSELLERS SECTION */
+  /* ============TOPSELLERS SECTION============= */
   .topsellers-container {
     margin-top: 120px;
   }
@@ -1219,7 +1233,7 @@ button {
     display: block;
   }
 
-  /* REVIEWS SECTION */
+  /* =============REVIEWS SECTION============= */
   .reviews-container {
     margin-top: 120px;
     margin-bottom: 120px;
@@ -1234,7 +1248,7 @@ button {
     display: block;
   }
 
-  /* FOOTER SECTION */
+  /* =============FOOTER SECTION============== */
   .footer-title {
     font-size: 26px;
     margin-right: 12px;
@@ -1256,5 +1270,5 @@ button {
     gap: 8px;
   }
 
-  /* MODAL WINDOW */
+  /* ===============MODAL WINDOW=============== */
 }
