@@ -1124,6 +1124,7 @@ button {
   .section {
     max-width: 1200px;
   }
+
   /* HEADER STYLES */
   .full-menu {
     gap: 90px;
@@ -1134,6 +1135,7 @@ button {
   .logo-link {
     font-size: 18px;
   }
+
   /* HERO STYLES */
   .hero-section {
     max-width: 1200px;
@@ -1154,6 +1156,7 @@ button {
   .benefits-item {
     flex-basis: calc((100% - 176px) / 3);
   }
+
   /* INGRIDIENTS SECTION */
   .ingridients-container {
     margin-top: 120px;
@@ -1164,6 +1167,7 @@ button {
   .ingridients-item {
     flex-basis: calc((100% - 96px) / 4);
   }
+
   /* HOW ITS MADE SECTION */
   .howitsmade-section {
     padding-left: 32px;
@@ -1199,6 +1203,7 @@ button {
     padding: 32px 20px;
     flex-basis: calc((100% - 54px) / 4);
   }
+
   /* TOPSELLERS SECTION */
   .topsellers-container {
     margin-top: 120px;
@@ -1213,6 +1218,7 @@ button {
   .topsellers-item:nth-child(3) {
     display: block;
   }
+
   /* REVIEWS SECTION */
   .reviews-container {
     margin-top: 120px;
@@ -1227,6 +1233,7 @@ button {
   .reviews-item:nth-child(3) {
     display: block;
   }
+
   /* FOOTER SECTION */
   .footer-title {
     font-size: 26px;
@@ -1248,62 +1255,6 @@ button {
     flex-direction: row;
     gap: 8px;
   }
-  /* MODAL WINDOW */
-  .modal-window {
-    width: 517px;
-    min-height: 794px;
-    padding: 40px;
-  }
-  .btn-close-modal {
-    top: 24px;
-    right: 24px;
-    width: 28px;
-    height: 28px;
-  }
-  .icon-btn-close {
-    display: block;
-    max-width: 100%;
-    object-fit: cover;
-  }
-  .modal-title {
-    margin-bottom: 40px;
-  }
-  .form-box {
-    margin-bottom: 18px;
-  }
-  .comment-box {
-    margin-bottom: 18px;
-  }
-  .icon-pic {
-    position: relative;
-  }
-  .input-field {
-    height: 68px;
-    border-radius: 13px;
-    padding-left: 62px;
-    padding-top: 22px;
-    padding-bottom: 22px;
-    padding-right: 24px;
-    font-size: 18px;
-  }
-  .comment-area {
-    height: 137px;
-    border-radius: 13px;
-    font-size: 18px;
-    background-color: transparent;
-    padding: 22px 24px;
-  }
 
-  .checkbox-box {
-    margin-bottom: 40px;
-  }
-  .user-privacy-text {
-    font-size: 14px;
-  }
-  .box-text-privacy {
-    font-size: 14px;
-  }
-  .btn-send-modal {
-    padding: 14px 40px;
-  }
+  /* MODAL WINDOW */
 }
