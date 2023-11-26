@@ -68,6 +68,12 @@ button {
   background-color: transparent;
   box-shadow: none;
   border: none;
+  padding: 0;
+  transition: scale 250ms linear;
+}
+.open-menu:hover,
+.open-menu:focus {
+  scale: 1.15;
 }
 .logo-box {
   display: flex;
@@ -112,6 +118,7 @@ button {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: -0.03em;
+  width: 290px;
 }
 .buy-button {
   background-color: #fd9222;
@@ -130,7 +137,8 @@ button {
   color: #fff;
   font-size: 14px;
   font-weight: 500;
-  text-align: center;
+  display: flex;
+  align-items: center;
 }
 .item-hero-buttons {
   display: flex;
@@ -259,9 +267,6 @@ button {
 .ingridients-item:nth-child(7),
 .ingridients-item:nth-child(8) {
   display: none;
-}
-.icon-arrow-element:nth-child(even) {
-  fill: #fd9222;
 }
 /* ================HOW ITS MADE SECTION============= */
 .howitsmade-container {
@@ -897,6 +902,7 @@ button {
   .hero-container h1 {
     color: #fff;
     font-size: 28px;
+    width: 484px;
   }
   .buy-button {
     padding: 14px 40px;
@@ -1179,6 +1185,26 @@ button {
   .logo-link {
     font-size: 18px;
   }
+  .menu-link {
+    transition: color 250ms ease-in-out;
+  }
+  .menu-link:hover {
+    color: #fd9222;
+  }
+  .icon {
+    transition: fill 250ms ease-in-out;
+  }
+  .icon-box:hover .icon,
+  .icon-box:focus .icon {
+    fill: #fd9222;
+  }
+  .icon-box {
+    transition: border 250ms ease-in-out;
+  }
+  .icon-box:hover,
+  .icon-box:focus {
+    border: 1px solid rgba(253, 146, 34, 0.1);
+  }
   /* ==================HERO STYLES=============== */
   .hero-section {
     max-width: 1200px;
@@ -1195,7 +1221,32 @@ button {
     background-position: center center;
     background-size: cover;
   }
-
+  .buy-button {
+    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+  }
+  .buy-button:hover,
+  .buy-button:focus {
+    color: #fd9222;
+    background-color: #fcf1e0;
+  }
+  .made-button {
+    transition: color 250ms ease-in-out, border 250ms ease-in-out;
+  }
+  .made-button:hover,
+  .made-button:focus {
+    color: #fd9222;
+    border: 1px solid #fd9222;
+  }
+  .scroll-button {
+    border-radius: 10px;
+    padding: 5px 16px 10px 16px;
+    background-color: transparent;
+    transition: background-color 250ms ease-in-out;
+  }
+  .scroll-button:hover,
+  .scroll-button:focus {
+    background-color: #1e1823;
+  }
   /* ===============BENEFITS SECTION============== */
   .benefits-section {
     padding-top: 50px;
@@ -1204,12 +1255,23 @@ button {
     padding-bottom: 56px;
   }
   .benefits-list {
-    gap: 0 88px;
+    gap: 88px;
   }
   .benefits-item {
     flex-basis: calc((100% - 176px) / 3);
+    position: relative;
   }
 
+  .benefits-item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 124px;
+    background-color: rgba(255, 255, 255, 0.5);
+    right: -18px;
+    top: 60px;
+  }
   /* ===========INGRIDIENTS SECTION============== */
   .ingridients-container {
     margin-top: 120px;
@@ -1256,7 +1318,16 @@ button {
     padding: 32px 20px;
     flex-basis: calc((100% - 54px) / 4);
   }
-
+  .btn-prise {
+    transition: scale 250ms ease-in-out, box-shadow 250ms ease-in-out,
+      color 250ms ease-in-out;
+  }
+  .btn-prise:hover,
+  .btn-prise:focus {
+    scale: 1.05;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: #fd9222;
+  }
   /* ============TOPSELLERS SECTION============= */
   .topsellers-container {
     margin-top: 120px;
@@ -1277,16 +1348,24 @@ button {
     margin-top: 120px;
     margin-bottom: 120px;
   }
+  .reviews-item:nth-child(3) {
+    display: block;
+  }
   .reviews-list {
     gap: 28px;
   }
   .reviews-item {
     flex-basis: calc((100% - 56px) / 3);
   }
-  .reviews-item:nth-child(3) {
-    display: block;
-  }
 
+  .review-btn {
+    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+  }
+  .review-btn:hover,
+  .review-btn:focus {
+    color: #fff;
+    background-color: #fd9222;
+  }
   /* =============FOOTER SECTION============== */
   .footer-title {
     font-size: 26px;
@@ -1302,12 +1381,48 @@ button {
   }
   .btn-subscribe {
     padding: 14px 28px;
+    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+  }
+  .btn-subscribe:hover,
+  .btn-subscribe:focus {
+    color: #fd9222;
+    background-color: #fcf1e0;
   }
   .form-subscribe {
     display: flex;
     flex-direction: row;
     gap: 8px;
   }
-
+  .contacts-link {
+    transition: color 250ms ease-in-out;
+  }
+  .contacts-link:hover,
+  .contacts-link:focus {
+    color: #fd9222;
+  }
+  .icon {
+    transition: fill 250ms ease-in-out;
+  }
+  .social-link-item:hover .icon,
+  .social-link-item:focus .icon {
+    fill: #fd9222;
+  }
+  .social-link-item {
+    transition: border 250ms ease-in-out;
+  }
+  .social-link-item:hover,
+  .social-link-item:focus {
+    border: 1px solid rgba(253, 146, 34, 0.1);
+  }
   /* ===============MODAL WINDOW=============== */
+  .btn-send-modal {
+    transition: color 250ms ease-in-out, background-color 250ms ease-in-out,
+      border 250ms ease-in-out;
+  }
+  .btn-send-modal:hover,
+  .btn-send-modal:focus {
+    color: black;
+    background-color: transparent;
+    border: 1px solid #fd9222;
+  }
 }
