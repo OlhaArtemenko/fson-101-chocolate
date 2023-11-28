@@ -1316,7 +1316,8 @@ button {
     position: relative;
   }
 
-  .benefits-item::after {
+  .benefits-item:nth-child(1):after,
+  .benefits-item:nth-child(2):after {
     content: '';
     display: block;
     position: absolute;
