@@ -471,7 +471,8 @@ button {
 }
 
 .blur {
-  transition: background-image 250ms ease-in-out, filter 250ms ease-in-out;
+  transition: background-image 250ms ease-in-out, filter 250ms ease-in-out,
+    filter 250ms ease-in-out;
 }
 
 .topsellers-item:hover .blur {
