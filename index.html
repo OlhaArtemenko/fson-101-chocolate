@@ -12,6 +12,7 @@
     integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/styles.css" />
+    <script src="mobil-menu.js" defer></script>
 </head>
 <body>
   <!-- Header -->
@@ -23,13 +24,13 @@
           <use href="./images/icons.svg#icon-chocolate"></use>
         </svg>
       </div>
-      <button class="open-menu" type="button">
+      <button class="open-menu" type="button" data-mobil-menu-open>
         <svg class="open-menu-svg" width="28" height="28">
           <use href="./images/icons.svg#icon-menu"></use>
         </svg>
       </button>
-      <div class="full-menu"> <!--is-open-->
-        <button class="exit-menu-btn" type="button">
+      <div class="full-menu is-hidden" data-mobil-menu> 
+        <button class="exit-menu-btn" type="button" data-mobil-menu-close>
           <svg class="exit-menu-svg" width="28" height="28">
             <use href="./images/icons.svg#icon-exit"></use>
           </svg>
@@ -571,7 +572,7 @@
     </div>
   </footer>
   <!-- Modal window  -->
-  <div class="backdrop"> <!--is-open-->
+  <div class="backdrop">
     <div class="modal-window ">
       <button class="btn-close-modal" type="button">
         <svg class="icon-btn-close" width="28" height="28">
